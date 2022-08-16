@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelo</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital@1&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <header>
+        <div class="cabecalho">
+            <h1>SITE DO IMC</h1>
+        </div>
+    </header>
+    <section>
+
+        <div class="container">
+            <p>Esse site calcula seu Índice de Massa Corporal, o famoso IMC.<br>
+                Mas como? &nbsp&nbsp Seu IMC é calulado dividindo seu peso em quilos por sua altura ao quadrado.<br>
+            </p>
+            <div class="relacao-imc">
+                <ul id="linha">
+                    <li><strong>IMC</strong></li>
+                    <li>Menos do que 18,5</li>
+                    <li>Entre 18,5 e 24,9</li>
+                    <li>Entre 25 e 29,9</li>
+                    <li>Entre 30 e 34,9</li>
+                    <li>Entre 35 e 39,9</li>
+                    <li>Mais do que 40</li>
+                </ul>
+                <ul>
+                    <li><strong>Resultado</strong></li>
+                    <li>Abaixo do peso</li>
+                    <li>Peso Normal</li>
+                    <li>Sobrepeso</li>
+                    <li>Obesidade grau 1</li>
+                    <li>Obesidade grau 2</li>
+                    <li>Obesidade grau 3</li>
+                </ul>
+            </div>
+            <p>Insira suas informações abaixo e clique em CALCULAR para descobrir seu IMC.</p>
+            <form action="/" method="post" id="formulario">
+                <label for="peso-1">Peso</label>
+                <input type="text" id="peso" placeholder="Seu peso (ex:70.3)" onclick="placeholder='0.0'"
+                    onblur="placeholder='Seu peso (ex:70.3)'">
+                <label for="altura">Altura</label>
+                <input type="text" id="altura" placeholder="Sua altura (ex:1.72)" onclick="placeholder='0.0'"
+                    onblur="placeholder='Sua altura (ex:1.72)' ">
+
+                <button type="submit">Enviar</button>
+
+                <div id="resultado" ></div>
+
+        </div>
+
+    </section>
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>

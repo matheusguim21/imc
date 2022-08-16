@@ -1,0 +1,139 @@
+:root {
+    --cor-de-fundo: rgba(8, 24, 94, 0.685);
+ 
+  }
+ 
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: 0;
+ 
+  }
+ 
+  body {
+    background-color: var(--cor-de-fundo);
+  }
+ 
+  .cabecalho {
+    display: grid;
+    border-radius: 5px;
+    width: 50%;
+    margin: auto;
+    height: 4rem;
+    background-color: azure;
+    text-align:center;
+    align-items: center;
+
+ 
+  }
+
+ 
+  .container {
+    display: grid;
+    justify-content: center;
+    justify-items: center;
+    background-color: rgb(255, 255, 255);
+    max-width: 50%;
+    min-width: 30%;
+    margin: 5rem auto 0 auto;
+    text-align: center;
+    border-radius: 5px;
+ 
+ 
+  }
+  .relacao-imc{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 80%;
+    border:3px solid rgb(0, 0, 0);
+    text-align: start ;
+    margin-bottom: 30px;
+    
+    
+    
+  
+  }
+  .relacao-imc > ul{
+    
+    list-style: none;
+    padding-right: 10px;
+   
+  }
+  .relacao-imc li{
+    margin: 2px 0 5px 20px;
+    
+  }
+  #linha{
+    border-right: 2px solid rgb(0, 0, 0);
+  }
+ 
+  .container>p {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    color: rgb(44, 43, 43);
+    margin-bottom: 20px;
+  }
+ 
+  form {
+    font-weight: bold;
+    color: rgb(54, 44, 52);
+    width: 100%;
+    margin-bottom: 50px;
+ 
+ 
+  }
+ 
+  form input {
+    display: block;
+    margin: 0 auto 10px auto;
+    box-shadow: 2px 2px 5px 4px var(--cor-de-fundo);
+    font-size: large;
+    height: 30px;
+    max-width: 80%;
+    min-width: fit-content;
+    text-align: center;
+    border-radius: 5px;
+  
+ 
+  }
+  
+
+ 
+  form>input:hover, form>input:focus {
+    box-shadow: 2px 2px 5px 4px crimson;
+    transition: 300ms;
+ 
+  }
+ 
+  form>button {
+    border-radius: 5px;
+    padding: 5px;
+    margin: 20px auto 15px auto;
+    width: 38%;
+    background: rgba(8, 24, 94, 0.500);
+    color: rgb(13, 13, 83);
+    transition: 1500ms;
+    cursor: pointer;
+  }
+ 
+  form>button:hover {
+    color: rgb(247, 239, 239);
+    background: rgba(220, 20, 60, 0.767);
+    transition: 250ms;
+  }
+  
+  .paragrafo-resultado-true{
+    background-color: rgb(17, 245, 207);
+    width: fit-content;
+    margin: auto;
+    padding: 10px;
+    border-radius: 5px;
+  }
+  .paragrafo-resultado-false{
+    background-color: rgb(245, 74, 74);
+    width: fit-content;
+    margin: auto;
+    padding: 10px;
+    border-radius: 5px;
+  }
